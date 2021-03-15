@@ -14,26 +14,36 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
     <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     
 </head>
 <body>
     <!-- NavBar --><!-- NavBar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <!-- My name in bar-->
+        <a class="navbar-brand" href="#">
+            <img src="./img/logo.png" width="30" height="30" alt="">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link mx-3" href="#aboutSection">About Me<span class="sr-only">(current)</span></a>
-            <a class="nav-link mx-3" href="#portfolio">Portfolio</a>
-            <a class="nav-link mx-3" href="#">Resume</a>
-            <a class="nav-link mx-3" href="#" tabindex="-1" aria-disabled="true">Contact Me</a>
+            <a class="nav-link text-hover mx-3" href="#aboutSection">About Me<span class="sr-only">(current)</span></a>
+            <a class="nav-link text-hover mx-3" href="#portfolio">Portfolio</a>
+            <a class="nav-link text-hover mx-3" href="#resume">Resume</a>
+            <a class="nav-link text-hover mx-3" href="#contact">Contact Me</a>
           </div>
           <div class="navbar-nav ml-auto">
-            <a class="nav-link active mx-3" href="#">LinkedIn<span class="sr-only">(current)</span></a>
-            <a class="nav-link mx-3" href="#">Github</a>
+            <a target="_blank" class="btn btn-primary mx-2 text-white" href="https://www.linkedin.com/in/michael-cocuy">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </a>
+            <a target="_blank" class="btn btn-success mx-2 text-white" href="https://api.whatsapp.com/send?phone=573227364470">
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+            </a>
+            <a target="_blank" class="btn btn-secondary mx-2 text-white" href="https://github.com/TzStrikerYT">
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
     </nav>
@@ -106,8 +116,8 @@
     </section>
     <!-- portfolio Section ends -->
 
-    <!-- About me Section -->
-    <section class="mt-5" id="aboutSection">
+    <!-- Resume Section -->
+    <section class="mt-5" id="resume">
         <div class="d-flex flex-wrap">
             <!-- My Picture -->
             <div class="col-lg-6 p-5 d-flex flex-column align-items-center justify-content-center">
@@ -134,7 +144,7 @@
                     <img class="m-3" style="width: 3rem;" src="./img/skills/css3.jpg" alt="css3">
                     <img class="m-3" style="width: 4rem;" src="./img/skills/nginx.png" alt="nginx">
                     <img class="m-3" style="width: 4rem;" src="./img/skills/ssl.png" alt="ssl">
-                    <img class="m-3" style="width: 4rem;" src="./img/skills/Haproxy-logo.png" alt="Haproxy-logo">
+                    <img class="m-3" style="width: 5rem;" src="./img/skills/Haproxy-logo.png" alt="Haproxy-logo">
                     <img class="m-3" style="width: 5rem;" src="./img/skills/docker.png" alt="docker">
                     <img class="m-3" style="width: 4rem;" src="./img/skills/git.png" alt="git">
                     <img class="m-3" style="width: 4rem;" src="./img/skills/linux.png" alt="linux">
@@ -142,20 +152,67 @@
             </div>
 
             <!-- Introduction -->
-            <div class="col-lg-6 d-flex align-items-center justify-content-center p-5">
-                <header class="mt-3">
-                    <h3 class="font-weight-lighter my-5">
-                        <b>Check my resume</b>
+            <div class="col-lg-6 d-flex align-items-center flex-column justify-content-center p-5">
+                <header class="m-3 text-center">
+                    <h3 class="font-weight-lighter">
+                        <b>You can validate my skills</b>
                     </h3>
-        
-                    <div class="conatiner text-center">
-                        <a href="#portfolio" class="btn btn-success shadow-lg text-white font-weight-bolder">See Michael's resume</a>
-                    </div>
+                    <h5 class="font-weight-lighter">
+                        Some of my personal projects and my resume
+                    </h5>
                 </header>
+                <div class="conatiner text-center">
+                    <a target="_blank" href="https://drive.google.com/file/d/1QYlOmZMDCN1lWqyrMEqsYTH_OYOg9dVN/view" class="btn btn-success shadow-lg text-white font-weight-bolder m-2">See Michael's resume</a>
+                    <a target="_blank" href="https://github.com/TzStrikerYT" class="btn btn-success shadow-lg text-white font-weight-bolder m-2">See Michael's Github</a>
+                </div>
             </div>
         </div>
     </section>
-    <!-- About me Section ends -->
+    <!-- Resumme Section ends -->
+
+     <!-- Contact Section -->
+     <section id="contact">
+        <div class="bg-dark p-5">
+            <header class="my-3 text-center">
+                <h1 class="font-weight-lighter text-white mb-3">
+                    Let's make something together.
+                </h1>
+                <h5 class="font-weight-lighter text-white">
+                    Find me on ...
+                </h5>
+            </header>
+            <!-- Contact Networks -->
+            <div class="container d-flex flex-wrap justify-content-center">
+                <!-- WhatsApp-->
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=573227364470">
+                    <img class="link-animation m-3 rounded-circle" src="./img/networks/whp.png" alt="Whatsapp">
+                </a>
+                <!-- Phone Number-->
+                <a target="_blank" href="tel:+57 3227364470">
+                    <img class="link-animation m-3 rounded-circle" src="./img/networks/phone.png" alt="phone">
+                </a>
+                <!-- LinkedIn -->
+                <a target="_blank" href="">
+                    <img class="link-animation m-3 rounded-circle" src="./img/networks/linkedin.jpg" alt="linkedin">
+                </a>
+                
+                <!-- Email -->
+                <a href="mailto: maicol.asus@gmail.com">
+                    <img class="bg-white link-animation m-3 rounded-circle" src="./img/networks/gmail.png" alt="gmail">
+                </a>
+            </div>
+            <header class="my-3 text-center">
+                <!-- Email -->
+                <h5 class="font-weight-lighter text-white mb-5">
+                    Click on some or send me to maicol.asus@gmail.com
+                </h5>
+                <h5 class="font-weight-lighter text-secondary mt-5">
+                    © Michael Cocuy All rights reserved.
+                </h5>
+            </header>
+        </div>
+    </section>
+    <!-- Contact Section ends -->
 
     <!-- My JS -->
     <script src="./js/script.js"></script>

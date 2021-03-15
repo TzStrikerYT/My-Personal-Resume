@@ -3,6 +3,11 @@
     scroll-behavior: smooth;
 }
 
+/* nav items */
+.text-hover:hover {
+    color: #FFD700 !important;
+}
+
 /* Div images */
 .img-size {
     background-image: url("../img/myPicture.jpeg");
@@ -10,6 +15,16 @@
     background-position: 0rem;
     width: 20rem;
     height: 20rem !important;
+}
+
+/* Links animations */
+.link-animation {
+    width: 5rem;
+    transition: 0.5s;
+}
+
+.link-animation:hover {
+    width: 7rem;
 }
 
 /* Bg-colors */
